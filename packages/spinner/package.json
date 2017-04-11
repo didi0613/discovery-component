@@ -1,0 +1,40 @@
+{
+  "name": "@walmart/wmreact-spinner",
+  "version": "1.1.0",
+  "description": "grocery spinner",
+  "main": "lib/index.js",
+  "author": {
+    "name": "James McIntyre"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gecgithub01.walmart.com/OneWalmart/spinner.git"
+  },
+  "bugs": {
+    "url": "https://gecgithub01.walmart.com/OneWalmart/spinner/issues"
+  },
+  "homepage": "https://gecgithub01.walmart.com/OneWalmart/spinner",
+  "dependencies": {
+    "@walmart/lithe-extras": "^3.14.1",
+    "electrode-archetype-react-component": "^2.0.0",
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "electrode-archetype-react-component-dev": "^2.0.0",
+    "gulp": "^3.9.1"
+  },
+  "engines": {
+    "node": "^4.2.6",
+    "npm": "^3.5.3"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp check"
+  },
+  "keywords": [
+    "react",
+    "electrode",
+    "electrode-component",
+    "react-component"
+  ]
+}

@@ -1,0 +1,38 @@
+@require './tenants/one-walmart/variables'
+
+:global
+  .spinner-container
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+:global
+  .spinner-full-container-overlay
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    background $overlay-white
+    z-index ($z-modal + 1)
+
+:global
+  .spinner-full-page-overlay
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    right 0
+    background $overlay-white
+    z-index ($z-modal + 1)
+
+:global
+  .spinner-icon
+    animation spinner-rotation 2s infinite linear
+
+@keyframes :global(spinner-rotation)
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(359deg)

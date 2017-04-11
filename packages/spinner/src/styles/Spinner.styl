@@ -1,0 +1,34 @@
+@require './tenants/'+$tenant+'/variables'
+
+.spinner-container
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.spinner-full-container-overlay
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  right 0
+  background $overlay-white
+  z-index ($z-modal + 1)
+
+.spinner-full-page-overlay
+  position fixed
+  top 0
+  left 0
+  bottom 0
+  right 0
+  background $overlay-white
+  z-index ($z-modal + 1)
+
+.spinner-icon
+  animation spinner-rotation 2s infinite linear
+
+@keyframes spinner-rotation
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(359deg)

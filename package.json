@@ -1,0 +1,20 @@
+{
+  "name": "discovery-component",
+  "version": "1.0.0",
+  "description": "discovery-component",
+  "author": {
+    "name": "Sheng Di",
+    "email": "sdi@walmartlabs.com"
+  },
+  "scripts": {
+    "test": "lerna bootstrap && lerna run test"
+  },
+  "dependency": {
+  },
+  "devDependencies": {
+    "electrode-gulp-helper": "^1.0.5",
+    "gulp": "^3.9.1",
+    "lerna": "^2.0.0-rc.1",
+    "lodash": "^4.10.1"
+  }
+}

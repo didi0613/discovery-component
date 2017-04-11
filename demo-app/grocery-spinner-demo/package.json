@@ -1,0 +1,48 @@
+{
+  "name": "grocery-spinner-demo",
+  "version": "0.0.1",
+  "description": "Grocery Spinner Demo",
+  "homepage": "",
+  "author": {
+    "name": "Sheng Di",
+    "email": "sdi@walmartlabs.com"
+  },
+  "contributors": [],
+  "files": [
+    "server",
+    "client",
+    "test"
+  ],
+  "main": "src/server/index.js",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "/my-app"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "^4.x.x || ^6.x.x",
+    "npm": ">= 3.x.x"
+  },
+  "scripts": {
+    "heroku-postbuild": "gulp build",
+    "prod": "echo 'Starting standalone server in PROD mode'; node .",
+    "start": "ELECTRODE_TENANT=${ELECTRODE_TENANT:=one-walmart} gulp dev",
+    "test": "gulp build && gulp check"
+  },
+  "dependencies": {
+    "@walmart/lithe-extras": "^3.14.1",
+    "bluebird": "^3.4.6",
+    "electrode-archetype-react-app": "^2.1.4",
+    "electrode-confippet": "^1.0.0",
+    "electrode-react-webapp": "^1.1.0",
+    "electrode-redux-router-engine": "^1.2.2",
+    "electrode-server": "^1.0.0",
+    "electrode-static-paths": "^1.0.0",
+    "spinner": "../../packages/spinner",
+    "electrode-demo-helper": "^1.0.0"
+  },
+  "devDependencies": {
+    "electrode-archetype-react-app-dev": "^2.1.4"
+  }
+}
