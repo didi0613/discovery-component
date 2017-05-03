@@ -1,1 +1,1 @@
-module.exports = require("electrode-demo-helper/config/default");
+module.exports = require("electrode-demo-helper").defaultConfig;

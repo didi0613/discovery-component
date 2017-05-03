@@ -1,1 +1,1 @@
-module.exports = require("electrode-demo-helper/config/production");
+module.exports = require("electrode-demo-helper").productionConfig;
