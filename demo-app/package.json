@@ -39,8 +39,8 @@
     "electrode-redux-router-engine": "^1.2.2",
     "electrode-server": "^1.0.0",
     "electrode-static-paths": "^1.0.0",
-    "spinner": "../../packages/spinner",
-    "electrode-demo-helper": "^1.0.0"
+    "spinner": "../packages/spinner",
+    "electrode-demo-helper": "../../demo-helper"
   },
   "devDependencies": {
     "electrode-archetype-react-app-dev": "^2.1.4"
