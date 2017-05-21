@@ -8,9 +8,9 @@ const arcPath = `M52 20.5c-3-8-10-14-18.4-15.6l.6-2.9c9.4 1.8 17.3 8.5 20.6
   17.5l-2.8 1z`;
 
 type Props = {
-  className?: string;
-  overlay?: "PAGE"|"CONTAINER";
-  children?: string;
+  className ? : string;
+  overlay ? : "PAGE" | "CONTAINER";
+  children ? : string;
 };
 
 const Spinner = ({
@@ -18,7 +18,7 @@ const Spinner = ({
   overlay,
   children,
   ...props
-}:Props):React$Element<*> => ( // eslint-disable-line no-undef
+}: Props): React$Element < * > => ( // eslint-disable-line no-undef
   <div {...props} className={classnames("spinner-container", className, {
     ["spinner-full-page-overlay"]: overlay === "PAGE",
     ["spinner-full-container-overlay"]: overlay === "CONTAINER"
