@@ -1,15 +1,26 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { Spinner } from "@walmart/wmreact-spinner";
+import { YourAwesomeComponent, RenderFriend, GuestList } from "@walmart/wmreact-spinner";
 
 export class Home extends React.Component {
   render() {
     return (
       <div>
-        <p>Some content in same parent div as Spinner...</p>
-        <Spinner overlay="CONTAINER" children={<div>I'm loading...</div>} />
-      </div>
+        <RenderFriend
+          friend={
+            {name: "John", img: "//goo.gl/dL5MXT"}
+          }
+        />
+        <GuestList
+          invitees={[
+          {name: 'John Smith', invited: false},
+          {name: 'Jane Smith', invited: false},
+          {name: 'Dan Jones', invited: false}
+          ]}
+          toggleGuest={(invitee) => alert(invitee.name)}
+        />
+        </div>
     );
   }
 }
